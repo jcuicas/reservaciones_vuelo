@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservaciones</title>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Reservaciones de vuelos</h1>
+    </div>
+    <div>
+      <h2>Fecha: <span id="fecha"></span></h2>
+    </div>
+  </header>
+  <main>
+    <div>
+      <img src="img/reserva.png" class="form-img" alt="mapa del mundo">
+    </div>
+    <div>
+      <h3>Reservaciones</h3>
+      <fieldset>
+        <legend>Entrada de datos</legend>
+        <div>
+          <label for="nro_personas">Número de personas:</label>
+          <input type="text" name="nro_personas" id="nro_personas" autofocus>
+        </div>
+        <div>
+          <label for="origen">Ciudad de origen:</label>
+          <select name="origen" id="origen">
+            <option label="Selecciona una ciudad" disabled selected></option>
+            <option value="caracas">Caracas</option>
+            <option value="bogota">Bogotá</option>
+            <option value="quito">Quito</option>
+          </select>
+        </div>
+        <div>
+          <label for="destino">Ciudad de destino:</label>
+          <select name="destino" id="destino">
+            <option label="Selecciona una ciudad" disabled selected></option>
+            <option value="londres">Londres</option>
+            <option value="madrid">Madrid</option>
+            <option value="paris">París</option>
+          </select>
+        </div>
+        <div>
+          <button type="button" id="calcular">Calcular</button>
+          <button type="button" id="borrar">Borrar</button>
+        </div>
+      </fieldset>
+      <h4 class="ocultar" id="monto-reserva">Monto de la reserva es <span id="monto"></span></h4>
+    </div>
+  </main>
+  <footer>
+    <h4>Reservaciones de vuelo</h4>
+    <h5>Realizado por: <strong>José Cuicas</strong></h5>
+  </footer>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
